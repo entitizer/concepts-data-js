@@ -19,15 +19,8 @@ describe('data', function() {
 	it('language', function() {
 		LANGUAGES.forEach(function(lang) {
 			NAMES.forEach(function(name) {
-				// console.log('LANG', lang, 'NAME', name);
 				var result = data.get(lang, name);
 				assert.ok(result);
-				// console.log(result);
-				// if (result) {
-				// 	console.log('OK!');
-				// } else {
-				// 	console.log('FAIL!');
-				// }
 			});
 		});
 	});
