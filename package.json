@@ -1,0 +1,29 @@
+{
+  "name": "concept-data",
+  "version": "0.0.1",
+  "description": "Data for Concept Extraction",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mitica/concept-data-js.git"
+  },
+  "keywords": [
+    "concept",
+    "nlp",
+    "data",
+    "entity"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mitica/concept-data-js/issues"
+  },
+  "homepage": "https://github.com/Mitica/concept-data-js",
+  "devDependencies": {
+    "mocha": "^2.3.2"
+  }
+}
