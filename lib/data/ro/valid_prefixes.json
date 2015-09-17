@@ -1,6 +1,4 @@
 [
-  "(liceul|liceului)",
-  "(prefectura|prefecturii)",
   "[îi]nchiso(area|rii)",
   "aeroportul\\w*",
   "aeroportul\\w* de la",
@@ -37,6 +35,7 @@
   "insulelor",
   "jude[tț]ul\\w*",
   "lacul",
+  "liceul(ui)?",
   "m[aă]n[aă]stir(ea|ii)",
   "m[aă]n[aă]stir\\w+",
   "mun[tț]ii",
@@ -52,6 +51,7 @@
   "pia[tț]a",
   "podul",
   "podului",
+  "prefectur(a|ii)",
   "premiil\\w+",
   "premiu\\w*",
   "prin[tț]es(a|ei)",
