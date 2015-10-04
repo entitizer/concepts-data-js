@@ -12,3 +12,4 @@ Data used by [concept-extractor](https://github.com/Mitica/concept-extractor-js)
 - **split_words** - words that (can) split concepts: *and*, *-*, etc.;
 - **valid_prefixes** - valid concept prefixes;
 - **valid_suffixes** - valid concept suffixes: Mumbai City **district**, *island*;
+- **rename_concepts** - rename local/incorect/abstract concepts: Moldova -> Republic of Moldova, etc.;
