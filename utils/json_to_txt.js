@@ -1,9 +1,9 @@
 'use strict';
 
 var fs = require('fs');
-var data = require('../lib');
-var LANGUAGES = data.getLanguages();
-var NAMES = data.getNames();
+var Data = require('../lib');
+var LANGUAGES = Data.getLanguages();
+var NAMES = Data.getNames();
 var path = require('path');
 
 function writeFile(file, content) {
@@ -25,7 +25,9 @@ function readFile(file) {
 function deleteFile(file) {
 	try {
 		fs.unlinkSync(file);
-	} catch (e) {}
+	} catch (e) {
+		console.log('No file', file);
+	}
 }
 
 function start() {

@@ -13,3 +13,20 @@ Data used by [concept-extractor](https://github.com/Mitica/concept-extractor-js)
 - **valid_prefixes** - valid concept prefixes;
 - **valid_suffixes** - valid concept suffixes: Mumbai City **district**, *island*;
 - **rename_concepts** - rename local/incorect/abstract concepts: Moldova -> Republic of Moldova, etc.;
+
+## Usage
+
+```
+var data = require('concept-data');
+
+// get rename rules for language Romanian & country Moldova:
+var renameRules = data.getRenameConcepts('ro', 'md');
+```
+
+## Changelog
+
+#### v0.0.3 - October 4, 2015
+
+- keep data files in txt format;
+- added **rename_concepts** - set a correct/known name for a concept;
+- get data by *lang* and **country** codes.

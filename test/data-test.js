@@ -21,10 +21,16 @@ describe('data', function() {
 			NAMES.forEach(function(name) {
 				var result = getData(name, lang);
 				assert.ok(result);
+				if (result.length === 0) {
+					console.log('No items for', name, lang);
+				}
 				var countries = data.getCountries(lang);
 				countries.forEach(function(country) {
 					result = getData(name, lang, country);
 					assert.ok(result);
+					if (result.length === 0) {
+						console.log('No items for', name, lang, country);
+					}
 				});
 			});
 		});
