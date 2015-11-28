@@ -1,6 +1,6 @@
-# concept-data
+# concepts-data
 
-Data used by [concept-extractor](https://github.com/Mitica/concept-extractor-js).
+Data used by [concepts-parser](https://github.com/Mitica/concepts-parser-js).
 
 ## Data types/names
 
@@ -24,6 +24,11 @@ var renameRules = data.getRenameConcepts('ro', 'md');
 ```
 
 ## Changelog
+
+#### v0.1.0 - November 28, 2015
+
+- renamed: **concept-data** to **concepts-data**;
+- fix concept split bug.
 
 #### v0.0.3 - October 4, 2015
 
