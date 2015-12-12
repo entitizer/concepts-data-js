@@ -1,6 +1,6 @@
 # concepts-data
 
-Data used by [concepts-parser](https://github.com/Mitica/concepts-parser-js).
+Data used by [concepts-parser](https://github.com/entitizer/concepts-parser-js).
 
 ## Data types/names
 
