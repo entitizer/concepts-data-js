@@ -1,6 +1,6 @@
 {
   "name": "concepts-data",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Data for Concept Extraction",
   "main": "./lib/index.js",
   "scripts": {
