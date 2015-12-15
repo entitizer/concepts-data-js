@@ -1,13 +1,13 @@
 
 (Acest|Acei|Acela|Acesti|Aceste|aceasta)
-(judecatorii|Judecatoarele|judecatorul\\w*|judecatoarea|judecatoarei)
-intreprinder\\w+
-\\w*ministru\\w*
-\\w*presedintele
-\\w+-\\w*ministru\\w*
-\\w+-\\w*presedinte\\w*
-\\w+-secretar\\w*
-\\w+-Speakerul\\w*
+(judecatorii|Judecatoarele|judecatorul\w*|judecatoarea|judecatoarei)
+intreprinder\w+
+\w*ministru\w*
+\w*presedintele
+\w+-\w*ministru\w*
+\w+-\w*presedinte\w*
+\w+-secretar\w*
+\w+-Speakerul\w*
 actionarii
 actiunile
 actorul
@@ -16,8 +16,8 @@ acum
 administratia
 agricultura
 alti
-ambasador\\w+
-angajat\\w+
+ambasador\w+
+angajat\w+
 antrenorul
 anul
 aproape
@@ -35,7 +35,7 @@ blogherul
 c[ia]ntareata
 c[ia]ntaretul
 ca
-Cancelarul\\w*
+Cancelarul\w*
 cardinalul
 catre
 cei
@@ -54,7 +54,7 @@ declaratia
 deja
 demisia
 demiterea
-deputat\\w+
+deputat\w+
 deputatii
 desi
 despre
@@ -70,7 +70,7 @@ doctorul
 domnul
 domnule
 domnului
-Drapel\\w*
+Drapel\w*
 duminica zilele
 dupa
 economia
@@ -86,13 +86,13 @@ fotbalistii
 fotbalistul
 fractiunea
 fractiunii
-Guvernatorul\\w*
+Guvernatorul\w*
 ieri
 in
 industria
 intre
 Intrebat
-invit\\w*
+invit\w*
 joi
 jucatoarea
 Jucatorii
@@ -118,7 +118,7 @@ m[ai]ine
 moldoveanca
 moldoveanul
 nationala
-nationalele\\w*campio(a)?n\\w+
+nationalele\w*campio(a)?n\w+
 nici
 noul
 orasul
@@ -130,7 +130,7 @@ poetul
 politicianul
 potrivit
 pozitia
-premierul\\w*
+premierul\w*
 Presa
 Presedintele parlamentului
 Presedintele tarii
@@ -146,26 +146,26 @@ Reducerea
 reforma
 reformarea
 replica
-reprezentant\\w+
+reprezentant\w+
 reprezentantii
 romanul
 rusul
 sambata
 satul
 scriitorul
-Secretar\\w+
+Secretar\w+
 sedinta
 sefa
 sefii
-seful\\w*
+seful\w*
 Selectionerul
-senatorul\\w*
+senatorul\w*
 si
 simbata
 Sistarea
 situatia
-Speakerul\\w*
-specialist\\w+
+Speakerul\w*
+specialist\w+
 sustinem
 Toate
 Trebuie

@@ -11,7 +11,7 @@ O
 Obec
 Prezident
 Pro
-Rok( d\+)?
+Rok( \d+)?
 Srážka
 Také
 Takové

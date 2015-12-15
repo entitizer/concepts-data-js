@@ -25,6 +25,10 @@ var renameRules = data.getRenameConcepts('ro', 'md');
 
 ## Changelog
 
+#### v0.1.1 - December 15, 2015
+
+- fix small errors
+
 #### v0.1.0 - November 28, 2015
 
 - renamed: **concept-data** to **concepts-data**;
