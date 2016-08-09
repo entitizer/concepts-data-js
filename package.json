@@ -1,11 +1,14 @@
 {
   "name": "concepts-data",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Data for Concept Extraction",
   "main": "./lib/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
     "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=4.0.0"
   },
   "repository": {
     "type": "git",

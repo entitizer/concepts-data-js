@@ -137,6 +137,7 @@ Bucurie
 Bulevard\w*
 Bursa
 Butoi
+Ca
 Camatar\w*
 C[ai]ntec
 Capitan
@@ -167,6 +168,7 @@ Cavaler
 Celsius
 Cent
 CEO
+Ce
 Cer
 Cercetar\w+
 CES

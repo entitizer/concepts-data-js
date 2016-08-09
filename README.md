@@ -25,6 +25,11 @@ var renameRules = data.getRenameConcepts('ro', 'md');
 
 ## Changelog
 
+#### v0.2.0 - August 9, 2016
+
+- engine >= node4
+- es6 syntax
+
 #### v0.1.2 - December 15, 2015
 
 - build 1 regExp from a list of data items. better performance

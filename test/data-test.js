@@ -1,10 +1,10 @@
 'use strict';
 
-var data = require('../lib');
-var assert = require('assert');
+const data = require('../lib');
+const assert = require('assert');
 
-var LANGUAGES = data.getLanguages();
-var NAMES = data.getNames();
+const LANGUAGES = data.getLanguages();
+const NAMES = data.getNames();
 
 function getData(name, lang, country) {
 	try {
@@ -19,12 +19,12 @@ describe('data', function() {
 	it('validation', function() {
 		LANGUAGES.forEach(function(lang) {
 			NAMES.forEach(function(name) {
-				var result = getData(name, lang);
+				let result = getData(name, lang);
 				assert.ok(result);
 				if (result.length === 0) {
 					console.log('No items for', name, lang);
 				}
-				var countries = data.getCountries(lang);
+				const countries = data.getCountries(lang);
 				countries.forEach(function(country) {
 					result = getData(name, lang, country);
 					assert.ok(result);
