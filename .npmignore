@@ -1,7 +1,8 @@
 
 node_modules
 test
-utils
+
+README.md
 
 .gitignore
 .editorconfig

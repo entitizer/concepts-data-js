@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/entitizer/concepts-data-js",
   "devDependencies": {
-    "mocha": "^2.3.2"
+    "mocha": "3.x.x"
   }
 }
