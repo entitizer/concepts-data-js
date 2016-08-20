@@ -25,6 +25,10 @@ var renameRules = data.getRenameConcepts('ro', 'md');
 
 ## Changelog
 
+#### v0.2.1 - August 20, 2016
+
+- fix empty data file issue
+
 #### v0.2.0 - August 9, 2016
 
 - engine >= node4
