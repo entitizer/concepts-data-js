@@ -100,10 +100,10 @@ function load(name: string, lang: string, country?: string): string[] {
 	if (NAMES.indexOf(name) < 0) {
 		throw new Error('Invalid name: ' + name);
 	}
-	let file = path.join(__dirname, 'data', lang, name + '.txt');
+	let file = path.join(__dirname, '../data', lang, name + '.txt');
 	let data = getFileData(file);
 	if (country) {
-		file = path.join(__dirname, 'data', lang, country, name + '.txt');
+		file = path.join(__dirname, '../data', lang, country, name + '.txt');
 		data = data.concat(getFileData(file));
 	}
 	return data;
