@@ -4,7 +4,7 @@ Data used by [concepts-parser](https://github.com/entitizer/concepts-parser-js).
 
 ## Data types/names
 
-- **connect_words** - words that (can) connect concepts: *for*, *of*, etc.;
+- **connect_words** - words that (may) connect concepts: *for*, *of*, etc.;
 - **invalid_concepts** (*accentless*) - known invalid words/concepts: *Brown*, *all*, etc.;
 - **invalid_prefixes** (*accentless*) - words that (can) connect concepts: *In London*, **In** is an invalid prefix;
 - **known_concepts** - irregular known concepts: *Dancing with the stars*;
@@ -24,6 +24,10 @@ var renameRules = data.getRenameConcepts('ro', 'md');
 ```
 
 ## Changelog
+
+#### v0.3.0 - March 9, 2017
+
+- TypeScript code
 
 #### v0.2.1 - August 20, 2016
 
