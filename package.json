@@ -14,7 +14,7 @@
     "postversion": "git push --follow-tags",
     "prepublish": "npm run tsc && npm run clean-test-code",
     "clean": "rimraf ./lib && rimraf ./types",
-    "clean-test-code": "rimraf ./lib/**/*.test.js && rimraf ./types/**/*.test.d.ts",
+    "clean-test-code": "rimraf ./lib/scripts && rimraf ./lib/**/*.test.js && rimraf ./types/**/*.test.d.ts",
     "build-invalid-concepts": "tsc && node ./lib/scripts/build-invalid-concepts.js",
     "build": "yarn run build-invalid-concepts"
   },
