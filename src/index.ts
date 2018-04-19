@@ -14,8 +14,7 @@ const NAMES: string[] = [
 	'valid_suffixes'
 ];
 
-export type RegNameType = { reg: RegExp, name: string };
-type DataType = RegNameType[] | RegExp[];
+type DataType = RegExp[];
 
 interface IBuilder {
 	[index: string]: (items: string[]) => DataType
@@ -33,12 +32,9 @@ const builders: IBuilder = {
 	invalid_prefixes: function (items: string[]): RegExp[] {
 		return items.length > 0 ? [new RegExp(`^(${items.join('|')}) `, 'i')] : [];
 	},
-	known_concepts: function (items: string[]): RegNameType[] {
+	known_concepts: function (items: string[]): RegExp[] {
 		return items.map((item) => {
-			return {
-				reg: new RegExp(`(\\b|\\s)${item}(\\b|\\s)`, 'ig'),
-				name: item
-			};
+			return new RegExp(`(\\b|\\s)${item}(\\b|\\s)`, 'ig');
 		});
 	},
 	partial_concepts: function (items: string[]): RegExp[] {
@@ -96,7 +92,7 @@ function build(name: string, lang: string, country?: string): DataType | string[
 	return data;
 }
 
-export function get<T extends string[] | RegExp[] | RegNameType[]>(name: string, lang: string): T {
+export function get<T extends string[] | RegExp[]>(name: string, lang: string): T {
 	if (!name) {
 		throw new Error('param `name` is required');
 	}
@@ -127,8 +123,8 @@ export function getInvalidPrefixes(lang: string): RegExp[] {
 	return get<RegExp[]>('invalid_prefixes', lang);
 }
 
-export function getKnownConcepts(lang: string): RegNameType[] {
-	return get<RegNameType[]>('known_concepts', lang);
+export function getKnownConcepts(lang: string): RegExp[] {
+	return get<RegExp[]>('known_concepts', lang);
 }
 
 export function getPartialConcepts(lang: string): RegExp[] {

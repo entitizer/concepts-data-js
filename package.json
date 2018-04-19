@@ -1,6 +1,6 @@
 {
   "name": "concepts-data",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Data for Concept Extraction",
   "main": "./lib/index.js",
   "types": "./types/index.d.ts",
@@ -19,7 +19,7 @@
     "build": "yarn run build-invalid-concepts"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0.0"
   },
   "repository": {
     "type": "git",
@@ -42,7 +42,6 @@
     "stopwords-json": "^1.2.0",
     "@types/node": "latest",
     "ava": "^0.23.0",
-    "debug": "^3.1.0",
     "rimraf": "^2.6.2",
     "typescript": "latest"
   }

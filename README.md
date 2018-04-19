@@ -24,6 +24,17 @@ const rules = data.getSplitWords('en');
 
 ## Changelog
 
+#### v0.4.0 - April 19, 2018
+
+- removed data `rename_concepts`
+- data values can be `string`[] or `RegExp`[]
+- `ava` tests
+- node v4
+
+#### v0.3.2 - March 26, 2018
+
+- added stopwords to `invalid_concepts`
+
 #### v0.3.0 - March 9, 2017
 
 - TypeScript code
