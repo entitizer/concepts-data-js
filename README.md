@@ -12,15 +12,14 @@ Data used by [concepts-parser](https://github.com/entitizer/concepts-parser-js).
 - **split_words** - words that (can) split concepts: *and*, *-*, etc.;
 - **valid_prefixes** - valid concept prefixes;
 - **valid_suffixes** - valid concept suffixes: Mumbai City **district**, *island*;
-- **rename_concepts** - rename local/incorect/abstract concepts: Moldova -> Republic of Moldova, etc.;
 
 ## Usage
 
 ```
-var data = require('concept-data');
+const data = require('concept-data');
 
-// get rename rules for language Romanian & country Moldova:
-var renameRules = data.getRenameConcepts('ro', 'md');
+// get split words for English:
+const rules = data.getSplitWords('en');
 ```
 
 ## Changelog
