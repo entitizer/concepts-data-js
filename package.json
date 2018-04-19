@@ -5,14 +5,17 @@
   "main": "./lib/index.js",
   "types": "./types/index.d.ts",
   "scripts": {
-    "pretest": "npm run tsc",
-    "test": "mocha",
+    "pretest": "npm run clean && npm run tsc",
+    "test": "ava --no-cache --verbose lib/**/*.test.js",
+    "posttest": "npm run clean-test-code",
     "tsc": "tsc",
     "tscw": "tsc -w",
     "preversion": "npm run tsc",
     "postversion": "git push --follow-tags",
-    "prepublish": "npm run tsc",
-    "build-invalid-concepts": "node ./scripts/build-invalid-concepts.js",
+    "prepublish": "npm run tsc && npm run clean-test-code",
+    "clean": "rimraf ./lib && rimraf ./types",
+    "clean-test-code": "rimraf ./lib/**/*.test.js && rimraf ./types/**/*.test.d.ts",
+    "build-invalid-concepts": "tsc && node ./lib/scripts/build-invalid-concepts.js",
     "build": "yarn run build-invalid-concepts"
   },
   "engines": {
@@ -35,10 +38,12 @@
   },
   "homepage": "https://github.com/entitizer/concepts-data-js",
   "devDependencies": {
-    "@types/node": "7.0.5",
     "atonic": "^1.0.4",
-    "mocha": "^3.2.0",
     "stopwords-json": "^1.2.0",
-    "typescript": "^2.2.1"
+    "@types/node": "latest",
+    "ava": "^0.23.0",
+    "debug": "^3.1.0",
+    "rimraf": "^2.6.2",
+    "typescript": "latest"
   }
 }
