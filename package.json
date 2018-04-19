@@ -11,7 +11,9 @@
     "tscw": "tsc -w",
     "preversion": "npm run tsc",
     "postversion": "git push --follow-tags",
-    "prepublish": "npm run tsc"
+    "prepublish": "npm run tsc",
+    "build-invalid-concepts": "node ./scripts/build-invalid-concepts.js",
+    "build": "yarn run build-invalid-concepts"
   },
   "engines": {
     "node": ">=0.10.0"

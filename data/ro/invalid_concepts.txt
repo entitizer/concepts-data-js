@@ -1,54 +1,15 @@
-(academia|academiei)
-(acordul|acordului)
-(alianta|aliante(i)?)
-(ambulanta|salvare(a)?)
-(astazi|azi|astazi)
 (august|septembrie|octombrie|noiembrie|decembrie)( \d+)?
 (autoritate(a)?|autoritatii)
-(biroul|biroului)
 (campio\w+ moldovei)
-(casa regala|casei regale)
-(centru|centrul|centrului)
-(cetate|cetatea|cetatii)
-(comisariatului|comisariatul)
-(conclavului|conclav|conclavul)
-(consiliu|consiliul\w*)
-(conventi\w+ (pdl|pdi))
-(directiei|directia)
-(formula|formulei)
-(ghz|hertz|mhz)
-(grupa|grupei)
 (ianuarie|februarie|martie|aprilie|mai|iunie|iulie)( \d+)?
-(ii|iii)
-(incredibil|nemaipomenit|de necrezut|extraordinar|news|news alert)
-(judecatoria|judecatoriei)
-(lege|legii|legea)
-(lei|leul|leu)
-(ligii|ligea|lege)
-(luni|marti|miercuri|joi|vineri|s[ai]mbata|duminica)
-(maratonul|maratonului)
-(mici|mititei)
-(ministerul|ministerului)
-(misiunea|misiunii|misiune)
-(posta)
-(povesti|poveste)
-(primarie(i)?|primaria)
-(primar|primarul|primarului)
-(programul|program)
-(realului|realul)
-(renasterii|renastere)
 (sala|salii) sporturilor
-(sectiei|sectia)
-(tratat(ul)?|tratatului)
-(tribunal|tribunalul)
-(uniunii|uniunea)
-(verdictul|verdict)
-(voda|voievod)
 [ivx]+-a
 \d+ ani
 \d+g
 absolut
+academia
 academie
+academiei
 acces
 acces direct
 acea
@@ -68,7 +29,9 @@ acesti
 acestia
 acolo
 acord
+acordul
 acordul\w* de asociere
+acordului
 acum
 adam
 adevar(ul)?
@@ -94,6 +57,8 @@ alb
 ale
 alea
 ali
+alianta
+aliantei
 altceva
 altcineva
 am
@@ -125,6 +90,7 @@ asupra
 atac
 atentie
 ati
+atunci
 au
 audio
 aur
@@ -152,6 +118,8 @@ beto
 biblioteca
 bilant
 bine
+biroul
+biroului
 blog
 boloni
 bomba
@@ -210,11 +178,17 @@ ce
 cel
 celsius
 cent
+centru
+centrul
+centrului
 ceo
 cer
 cercetar\w+
 ces
+cetate
+cetatea
 cetatean\w*
+cetatii
 ceva
 chanel
 chiar
@@ -248,6 +222,8 @@ com
 comenteaza
 comert
 comis
+comisariatul
+comisariatului
 comisi\w+
 comitetul\w* executiv
 comunicare
@@ -257,10 +233,12 @@ conclav
 conferinta
 congresul
 congresul\w* civic
+consiliu
 consiliu\w* de administratie
 consiliu\w* local
 consiliu\w* national
 consiliu\w+ judetean
+consiliul\w*
 consiliul\w* republican
 constantin
 constituti\w+
@@ -294,6 +272,7 @@ data
 datorita
 dau
 de
+de necrezut
 deci
 deco
 deja
@@ -314,7 +293,10 @@ dinam
 dintr-
 dintre
 dip
+direcatia
 direct sport\.ro
+directia
+directiei
 directoratul\w*
 dn\d+
 doamna
@@ -326,6 +308,7 @@ dom
 doua
 drept
 dst
+duminica
 dupa
 dupa \d+
 ea
@@ -350,6 +333,7 @@ eveniment\w*
 exclusiv
 exotic
 explozie
+extraordinar
 fabrica
 face
 facultate
@@ -381,6 +365,8 @@ florii
 foc
 focus
 fondul(ui)?
+formula
+formulei
 forum radio
 foto
 foto hot
@@ -402,6 +388,7 @@ general
 gheara
 gheata
 ghiocel
+ghz
 gloria
 gmt
 gol
@@ -411,12 +398,15 @@ gradinita
 gratie
 grenoble
 grup
+grupa
+grupei
 guvernatorul\w*
 halba
 haos
 harta
 health reform
 heat
+hertz
 hexagon
 hotar[ai]re(a)? de guvern
 iar
@@ -427,6 +417,7 @@ ics
 id
 ieri
 ii
+iii
 il
 ilie
 im
@@ -441,8 +432,10 @@ ina
 inainte
 inaintea
 incat
+incepand
 incit
 incotro
+incredibil
 indurare
 inginerie
 inima
@@ -450,6 +443,8 @@ inspectorat\w+ de politie
 inspectoratul scolar judetean
 institutul
 interviu\w*
+intr-o
+intr-un
 intra( aici)?
 intre
 intrucat
@@ -460,14 +455,18 @@ istorie
 istres
 italia 1
 iti
+iv
 jet
 jocuri
 jocuri de putere
+joi
 joia
 joker
 jos
 jos \w+
 judecator\w*
+judecatoria
+judecatoriei
 judetean
 judiciar
 justiti(a|ei)
@@ -475,15 +474,22 @@ kwh
 la
 langa
 le
+lege
+legea
 legi
+legii
+lei
 leni
 les guignols
 leu
+leul
 li
 libertat(ea|ii)
 liceu
 lider(ul)?
 liga
+ligea
+ligii
 limba
 limba si literatura romana
 linga
@@ -505,14 +511,19 @@ lui
 lume
 lumea
 lumina
+luni
 m[ai]ine
 ma
+macar
 mai
 maine
 man
+maratonul
+maratonului
 mare
 mari
 marta
+marti
 martor
 mazare
 mea
@@ -530,17 +541,25 @@ mele
 meme
 mereu
 meu
+mhz
 mi
+mici
 mie
+miercuri
 miine
 min
 mine
 minister(ul\w*)?
+ministerul
+ministerului
 ministru\w*
 mintea
 minune
 miracol
 miscare(a)?
+misiune
+misiunea
+misiunii
 mit
 mmhg
 moarte
@@ -560,8 +579,10 @@ munca
 national
 ne
 nebunie
+nemaipomenit
 neo
 nevoie
+news
 news alert
 news online
 next
@@ -585,7 +606,11 @@ noroc
 nostri
 nostru
 noua
+noul
 nu
+o
+oameni
+oamenii
 ocean
 oficial
 oglinda
@@ -656,7 +681,10 @@ politi\w+ local[ea]
 politica
 polo
 portocaliu
+posta
 pot
+poveste
+povesti
 power
 poze
 praf
@@ -670,16 +698,24 @@ prim plan
 prim-ministru
 prim-ministrul\w* roman\w+
 prima
+primar
+primaria
+primarie(i)?
+primarul
+primarului
 primavara
 primul
 prin
 printr-
+printr-un
 pro
 problem[ea]
 procuror\w*
 profesionistii
 profesor
 prognoza meteo
+program
+programul
 prometeu
 puncte de reflectie
 putere
@@ -695,6 +731,8 @@ rasarit
 rat
 razboi(ul)?
 realitate
+realul
+realului
 reci
 record
 regat(ul)?
@@ -702,6 +740,9 @@ rege
 regie
 regulamentul\w* parlamentului
 related posts
+renastere
+renasterea
+renasterii
 repartizare(a)?
 replica
 reportaj
@@ -733,6 +774,7 @@ salon
 salon\w* auto
 salonul de carte
 salvare(a)?
+sambata
 san
 sana
 sanatat\w+
@@ -749,9 +791,13 @@ scoli
 scorpion
 se
 secret
+secretul
 sectia
+sectiei
 sectorul
 securitat(e|ea|ii)?
+sefa
+seful
 semifinalele cupei
 senat
 sera
@@ -763,6 +809,7 @@ show
 show total
 si
 sif
+simbata
 singuratate
 sint
 sintem
@@ -848,20 +895,27 @@ torres
 tot
 toti
 totodata
+totul
 totusi
 tragedi[a|e]
 tragedie
 transport
+tratat(ul)?
+tratatului
 trebuie
 trei
 treia
 treilea
 tribuna
+tribunal
+tribunalul
 tu
 turism
 tutun
 twh
+ultima
 ultima ora
+ultimul
 umbra
 un
 una
@@ -875,6 +929,8 @@ uni
 unii
 unirea
 united
+uniunea
+uniunii
 universitat\w+
 unor
 unora
@@ -889,7 +945,10 @@ va
 valea
 valea mare
 vara
+vei
 verde
+verdict
+verdictul
 vest
 veste(a)?
 vezi
@@ -899,6 +958,7 @@ viata
 vic
 victori[ea]
 video
+vii
 viitor
 viitorul
 vin
@@ -908,7 +968,10 @@ vineri
 vitamina \w
 voastra
 voastre
+voda
 voi
+voievod
+vom
 vostri
 vostru
 voua
@@ -919,6 +982,8 @@ vreo
 vreun
 vulcan
 west point
+xx
+xxx
 yes
 zece
 zero
