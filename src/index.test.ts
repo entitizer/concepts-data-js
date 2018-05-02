@@ -44,7 +44,7 @@ LANGUAGES.forEach(function (lang) {
     });
 });
 
-function getData(name, lang) {
+function getData(name: string, lang: string) {
     try {
         return data.get(name, lang);
     } catch (e) {

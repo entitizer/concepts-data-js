@@ -15,8 +15,9 @@
     "prepublish": "npm run tsc && npm run clean-test-code",
     "clean": "rimraf ./lib && rimraf ./types",
     "clean-test-code": "rimraf ./lib/scripts && rimraf ./lib/**/*.test.js && rimraf ./types/**/*.test.d.ts",
-    "build-invalid-concepts": "tsc && node ./lib/scripts/build-invalid-concepts.js",
-    "build": "yarn run build-invalid-concepts"
+    "build-invalid-concepts": "node ./lib/scripts/build-invalid-concepts.js",
+    "build-firstnames": "node ./lib/scripts/build-firstnames.js",
+    "build": "tsc && yarn build-invalid-concepts && yarn build-firstnames"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -38,11 +39,13 @@
   },
   "homepage": "https://github.com/entitizer/concepts-data-js",
   "devDependencies": {
-    "atonic": "^1.0.4",
-    "stopwords-json": "^1.2.0",
     "@types/node": "latest",
+    "@types/node-fetch": "^1.6.9",
+    "atonic": "^1.0.4",
     "ava": "^0.23.0",
+    "node-fetch": "^2.1.2",
     "rimraf": "^2.6.2",
+    "stopwords-json": "^1.2.0",
     "typescript": "latest"
   }
 }

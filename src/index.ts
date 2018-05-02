@@ -23,7 +23,7 @@ interface IData {
 	[index: string]: DataType | string[]
 }
 
-const DATA = {};
+const DATA: IData = {};
 
 const builders: IBuilder = {
 	invalid_concepts: function (items: string[]): RegExp[] {
@@ -104,7 +104,7 @@ export function get<T extends string[] | RegExp[]>(name: string, lang: string): 
 	if (!DATA[key]) {
 		DATA[key] = build(name, lang);
 	}
-	return DATA[key];
+	return DATA[key] as T;
 }
 
 export function getConnectWords(lang: string): string[] {
