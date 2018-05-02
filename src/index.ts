@@ -8,10 +8,11 @@ const NAMES: string[] = [
 	'split_words',
 	'invalid_concepts',
 	'invalid_prefixes',
-	'known_concepts',
+	// 'known_concepts',
 	'partial_concepts',
 	'valid_prefixes',
-	'valid_suffixes'
+	'valid_suffixes',
+	'firstnames',
 ];
 
 type DataType = RegExp[];
@@ -32,11 +33,11 @@ const builders: IBuilder = {
 	invalid_prefixes: function (items: string[]): RegExp[] {
 		return items.length > 0 ? [new RegExp(`^(${items.join('|')}) `, 'i')] : [];
 	},
-	known_concepts: function (items: string[]): RegExp[] {
-		return items.map((item) => {
-			return new RegExp(`(\\b|\\s)${item}(\\b|\\s)`, 'ig');
-		});
-	},
+	// known_concepts: function (items: string[]): RegExp[] {
+	// 	return items.map((item) => {
+	// 		return new RegExp(`(\\b|\\s)${item}(\\b|\\s)`, 'ig');
+	// 	});
+	// },
 	partial_concepts: function (items: string[]): RegExp[] {
 		return items.length > 0 ? [new RegExp(`^(${items.join('|')})$`, 'i')] : [];
 	},
@@ -45,7 +46,10 @@ const builders: IBuilder = {
 	},
 	valid_suffixes: function (items: string[]): RegExp[] {
 		return items.length > 0 ? [new RegExp(`^ (${items.join('|')})(\\b|\\s)`, 'i')] : [];
-	}
+	},
+	firstnames: function (items: string[]): RegExp[] {
+		return items.length > 0 ? [new RegExp(`^(${items.join('|')})[ -]`)] : [];
+	},
 }
 
 function getFileData(file: string): string[] {
@@ -123,9 +127,9 @@ export function getInvalidPrefixes(lang: string): RegExp[] {
 	return get<RegExp[]>('invalid_prefixes', lang);
 }
 
-export function getKnownConcepts(lang: string): RegExp[] {
-	return get<RegExp[]>('known_concepts', lang);
-}
+// export function getKnownConcepts(lang: string): RegExp[] {
+// 	return get<RegExp[]>('known_concepts', lang);
+// }
 
 export function getPartialConcepts(lang: string): RegExp[] {
 	return get<RegExp[]>('partial_concepts', lang);
@@ -137,6 +141,10 @@ export function getValidPrefixes(lang: string): RegExp[] {
 
 export function getValidSuffixes(lang: string): RegExp[] {
 	return get<RegExp[]>('valid_suffixes', lang);
+}
+
+export function getFirstnames(lang: string): RegExp[] {
+	return get<RegExp[]>('firstnames', lang);
 }
 
 export function getLanguages(): string[] {
