@@ -12,6 +12,7 @@ Data used by [concepts-parser](https://github.com/entitizer/concepts-parser-js).
 - **split_words** - words that (can) split concepts: *and*, *-*, etc.;
 - **valid_prefixes** - valid concept prefixes;
 - **valid_suffixes** - valid concept suffixes: Mumbai City **district**, *island*;
+- **firstnames** (*accentless*) - popular firstnames;
 
 ## Usage
 
@@ -23,6 +24,11 @@ const rules = data.getSplitWords('en');
 ```
 
 ## Changelog
+
+#### v0.4.1 - May 2, 2018
+
+- added `firstnames`
+- script `build-firstnames`
 
 #### v0.4.0 - April 19, 2018
 
