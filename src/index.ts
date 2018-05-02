@@ -8,7 +8,7 @@ const NAMES: string[] = [
 	'split_words',
 	'invalid_concepts',
 	'invalid_prefixes',
-	// 'known_concepts',
+	'known_concepts',
 	'partial_concepts',
 	'valid_prefixes',
 	'valid_suffixes',
@@ -33,11 +33,11 @@ const builders: IBuilder = {
 	invalid_prefixes: function (items: string[]): RegExp[] {
 		return items.length > 0 ? [new RegExp(`^(${items.join('|')}) `, 'i')] : [];
 	},
-	// known_concepts: function (items: string[]): RegExp[] {
-	// 	return items.map((item) => {
-	// 		return new RegExp(`(\\b|\\s)${item}(\\b|\\s)`, 'ig');
-	// 	});
-	// },
+	known_concepts: function (items: string[]): RegExp[] {
+		return items.map((item) => {
+			return new RegExp(`(\\b|\\s)${item}(\\b|\\s)`, 'ig');
+		});
+	},
 	partial_concepts: function (items: string[]): RegExp[] {
 		return items.length > 0 ? [new RegExp(`^(${items.join('|')})$`, 'i')] : [];
 	},
@@ -127,9 +127,9 @@ export function getInvalidPrefixes(lang: string): RegExp[] {
 	return get<RegExp[]>('invalid_prefixes', lang);
 }
 
-// export function getKnownConcepts(lang: string): RegExp[] {
-// 	return get<RegExp[]>('known_concepts', lang);
-// }
+export function getKnownConcepts(lang: string): RegExp[] {
+	return get<RegExp[]>('known_concepts', lang);
+}
 
 export function getPartialConcepts(lang: string): RegExp[] {
 	return get<RegExp[]>('partial_concepts', lang);
