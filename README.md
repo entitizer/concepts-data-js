@@ -25,6 +25,10 @@ const rules = data.getSplitWords('en');
 
 ## Changelog
 
+#### v0.4.2 - May 3, 2018
+
+- news firstnames by country
+
 #### v0.4.1 - May 2, 2018
 
 - added `firstnames`
