@@ -26,7 +26,15 @@ seriesPromise(getLanguages(), async lang => {
     fs.writeFileSync(file, firstNames.join('\n'), 'utf8');
 });
 
-function getWikipediaPopularFirstnames(lang: string): Promise<string[]> {
+async function getWikipediaPopularFirstnames(lang: string): Promise<string[]> {
+    let list = await getWikipediaPopularFirstnamesByLang(lang);
+    await seriesPromise(LANG_COUNTRIES[lang],
+        country => getWikipediaPopularFirstnamesByLangAndCountry(lang, country).then(r => list = list.concat(r)));
+    
+    return list;
+}
+
+function getWikipediaPopularFirstnamesByLang(lang: string): Promise<string[]> {
     const query = `SELECT ?firstname ?firstnameLabel ?count WHERE {
         {
           SELECT ?firstname (COUNT(?human) AS ?count) WHERE {
@@ -39,7 +47,30 @@ function getWikipediaPopularFirstnames(lang: string): Promise<string[]> {
         SERVICE wikibase:label { bd:serviceParam wikibase:language "${lang}" } .
       }
       ORDER BY DESC(?count)
-      LIMIT 250`;
+      LIMIT 200`;
+
+    return fetchWikipediaPopularFirstnames(query);
+}
+function getWikipediaPopularFirstnamesByLangAndCountry(lang: string, country: string): Promise<string[]> {
+    const query = `SELECT ?firstname ?firstnameLabel ?count WHERE {
+        {
+          SELECT ?firstname (COUNT(?human) AS ?count) WHERE {
+            ?human wdt:P31 wd:Q5.
+            ?human wdt:P27 wd:${country}.
+            ?sitelink schema:isPartOf <https://${lang}.wikipedia.org/>;schema:about ?human.
+            ?human wdt:P735 ?firstname.
+          }
+          GROUP BY ?firstname
+        }
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "${lang}" } .
+      }
+      ORDER BY DESC(?count)
+      LIMIT 200`;
+
+    return fetchWikipediaPopularFirstnames(query);
+}
+
+function fetchWikipediaPopularFirstnames(query: string): Promise<string[]> {
 
     return fetch('https://query.wikidata.org/sparql?format=json&query=' + query)
         .then(response => response.json())
@@ -71,4 +102,15 @@ function getNames(name: string): string[] {
 
 function isValidName(name: string) {
     return name && name.trim().length > 2 && name !== name.toLowerCase() && !/^Q\d+$/.test(name);
+}
+
+const LANG_COUNTRIES: { [lang: string]: string[] } = {
+    ro: ['Q217', 'Q218'],
+    bg: ['Q219'],
+    cs: ['Q213'],
+    en: ['Q30', 'Q145'],
+    hu: ['Q28'],
+    it: ['Q38'],
+    pl: ['Q36'],
+    ru: ['Q159'],
 }
