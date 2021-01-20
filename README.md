@@ -1,4 +1,4 @@
-# concepts-data
+# concepts-data [DEPRECATED]
 
 Data used by [concepts-parser](https://github.com/entitizer/concepts-parser-js).
 
